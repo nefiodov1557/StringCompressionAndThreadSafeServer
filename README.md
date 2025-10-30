@@ -6,21 +6,11 @@
 
 1. **Task 1 — String Compression**  
    Алгоритм для сжатия строк по принципу Run-Length Encoding.  
-
-> **Пример:**
-> Исходная строка:  aaabbcccdde
-> Сжатая строка:   a3b2c3d2e
-> Разжатая строка: aaabbcccdde
-
 Реализованы методы `Compress()` и `Decompress()` с проверками и тестами.
 
 2. **Task 2 — Thread Safe Server**  
 Потокобезопасный сервер, корректно обрабатывающий параллельное увеличение счётчика.  
 Используется `lock` для синхронизации доступа к общим данным.
-
-> **Пример:**
-> Ожидаемое значение: 10000
-> Фактическое значение: 10000
 
 ---
 
@@ -31,27 +21,6 @@
 - **MSTest Framework**
 - **Parallel.For / Multithreading**
 - **Lock synchronization**
-
----
-
-## 📂 Структура решения
-
-StringCompressionAndThreadSafeServer.sln
-│
-├── StringCompressionAndThreadSafeServer
-│ └── Program.cs # Демонстрация обеих задач
-│
-├── Task1_Compression
-│ └── StringCompressor.cs # Алгоритм сжатия / разжатия
-│
-├── Task1_Test
-│ └── StringCompressorTests.cs # Модульные тесты первой задачи
-│
-├── Task2_ThreadSafeServer
-│ └── Server.cs # Потокобезопасный счётчик
-│
-└── Task2_Test
-└── ServerTests.cs # Модульные тесты второй задачи
 
 ---
 
